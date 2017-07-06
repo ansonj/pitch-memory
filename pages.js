@@ -1,4 +1,10 @@
-var page_01 = "Introduction and consent to participate";
+var page_01 = "<div class=\"page-title\">\
+    Introduction and consent to participate\
+</div>\
+<br>\
+<div class=\"page-text\">\
+    By clicking \"Next page\" above, you consent to participate.\
+</div>";
 
 var page_02 = "Rules page";
 

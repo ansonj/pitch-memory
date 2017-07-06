@@ -12,3 +12,13 @@ td.td-nav {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.page-title {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-text {
+
+}
