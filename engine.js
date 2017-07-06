@@ -1,4 +1,5 @@
-var currentPage = 0;
+var startPage = 0;
+var currentPage = startPage - 1;
 
 function nav_nextPage() {
     // do validation on inputs here, if needed
@@ -10,6 +11,10 @@ function nav_nextPage() {
 
 function nav_loadPage(pageNumber) {
     document.getElementById('page-contents').innerHTML = pages[pageNumber];
+
+    if (pageNumber == 0) {
+        nav_showNextButton();
+    }
 
     if (pageNumber == pages.length - 1) {
         nav_hideNextButton();
