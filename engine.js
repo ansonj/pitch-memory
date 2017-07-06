@@ -16,6 +16,10 @@ function nav_loadPage(pageNumber) {
         nav_showNextButton();
     }
 
+    if (pageNumber == 1) {
+        nav_hideNextButton();
+    }
+
     if (pageNumber == pages.length - 1) {
         nav_hideNextButton();
     }
