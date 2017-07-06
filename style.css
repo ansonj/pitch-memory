@@ -1,9 +1,10 @@
-td {
+td.td-nav {
     text-align: center;
 }
 
 .major-title {
     font-weight: bold;
+    font-size: x-large;
 }
 
 .nav-link {
