@@ -6,15 +6,13 @@
     <script src="pages.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body onload="nav_loadPage(0);">
+<body onload="nav_loadPage(0);nav_showNextButton();">
     <center>
         <table border=2 cellpadding=10 width=1000px>
             <tr>
                 <td>
                     <div class="major-title">Pitch Memory</div>
-                    <span id="nav-link-right" class="nav-link" style="float:right" onclick="nav_nextPage();">
-                        Next page >>
-                    </span>
+                    <span id="nav-link-right" class="nav-link" style="float:right" onclick="nav_nextPage();"></span>
                 </td>
             </tr>
             <tr>
