@@ -9,7 +9,7 @@ function nav_nextPage() {
 function nav_loadPage(pageNumber) {
     document.getElementById('page-contents').innerHTML = pages[pageNumber];
 
-    if (pageNumber == 8) {
+    if (pageNumber == pages.length - 1) {
         document.getElementById('nav-link-right').innerHTML = '';
     }
 }
