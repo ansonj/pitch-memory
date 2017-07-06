@@ -1,32 +1,32 @@
-var page_0 = "Introduction and consent to participate";
+var page_01 = "Introduction and consent to participate";
 
-var page_1 = "Rules page";
+var page_02 = "Rules page";
 
-var page_2 = "First task page";
+var page_03 = "First task page";
 
-var page_3 = "Intermediate page";
+var page_04 = "Intermediate page";
 
-var page_4 = "Prep page for second task";
+var page_05 = "Prep page for second task";
 
-var page_5 = "Second task page";
+var page_06 = "Second task page";
 
-var page_6 = "Intermediate page";
+var page_07 = "Intermediate page";
 
-var page_7 = "Final task page";
+var page_08 = "Final task page";
 
-var page_8 = "Submit results page";
+var page_09 = "Submit results page";
 
-var page_9 = "End page";
+var page_10 = "End page";
 
 var pages = [
-    page_0,
-    page_1,
-    page_2,
-    page_3,
-    page_4,
-    page_5,
-    page_6,
-    page_7,
-    page_8,
-    page_9
+    page_01,
+    page_02,
+    page_03,
+    page_04,
+    page_05,
+    page_06,
+    page_07,
+    page_08,
+    page_09,
+    page_10,
 ];
