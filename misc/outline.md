@@ -34,6 +34,8 @@
     - Display 12 buttons that correspond to the 12 pitch classes.
     - Play 4 sounds in the treble register (chosen from F4 up to G5, not including C5) and then 4 sounds in the bass register (Chosen from F2 up to G3, not including C3).
     - After each sound is played, give a set time (5 seconds?) for a response.  Then go to the next sound.
+1. Submit results page
+    - Submit results to Google Doc.
 1. End page
     - Thank you for participating.
     - If you have questions or want to know how the study works out, email me at cbartlette@binghamton.edu.
