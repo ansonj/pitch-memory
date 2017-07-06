@@ -1,0 +1,13 @@
+td {
+    text-align: center;
+}
+
+.major-title {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

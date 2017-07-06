@@ -1,11 +1,27 @@
 <html>
 <head>
     <title>Pitch Memory</title>
-    <script src="src.js" type="text/javascript"></script>
+    <script src="engine.js" type="text/javascript"></script>
+    <script src="audio.js" type="text/javascript"></script>
+    <script src="pages.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
-<p><img src="img/test.png"></p>
-<p>Test image above.</p>
+<body onload="nav_loadPage(0);">
+    <center>
+        <table border=2 cellpadding=10 width=1000px>
+            <tr>
+                <td>
+                    <span class="major-title">Pitch Memory</span>
+                    <span id="nav-link-right" class="nav-link" style="float:right" onclick="nav_nextPage();">
+                        Next page >>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td id="page-contents">
+                </td>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
