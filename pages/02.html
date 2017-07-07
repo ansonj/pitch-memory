@@ -11,7 +11,10 @@
         <li>Do not use your browser's Back or Refresh buttons. This will destroy your progress and reset the test.</li>
     </ol>
     <p>
-        <input id="rules-checkbox" type="checkbox" onclick="if(document.getElementById('rules-checkbox').checked){nav_showNextButton();}else{nav_hideNextButton();}">
+        <input id="rules-checkbox" type="checkbox" onclick="document.getElementById('p2-acceptance').disabled=!document.getElementById('rules-checkbox').checked;">
         I am in a quiet location and I will not vocalize during the test.
     </p>
+    <div style="text-align:center;">
+        <input id="p2-acceptance" class="button" type="button" value="Continue" onclick="nav_nextPage();" disabled="true" />
+    </div>
 </div>

@@ -3,7 +3,12 @@ var page_01 = "<div class=\"page-title\">\
 </div>\
 <br>\
 <div class=\"page-text\">\
-    By clicking \"Next page\" above, you consent to participate.\
+    <p>\
+        By clicking Continue, you consent to participate.\
+    </p>\
+    <div style=\"text-align:center;\">\
+        <input class=\"button\" type=\"button\" value=\"Continue\" onclick=\"nav_nextPage();\"/>\
+    </div>\
 </div>";
 
 var page_02 = "<div class=\"page-title\">\
@@ -19,9 +24,12 @@ var page_02 = "<div class=\"page-title\">\
         <li>Do not use your browser's Back or Refresh buttons. This will destroy your progress and reset the test.</li>\
     </ol>\
     <p>\
-        <input id=\"rules-checkbox\" type=\"checkbox\" onclick=\"if(document.getElementById('rules-checkbox').checked){nav_showNextButton();}else{nav_hideNextButton();}\">\
+        <input id=\"rules-checkbox\" type=\"checkbox\" onclick=\"document.getElementById('p2-acceptance').disabled=!document.getElementById('rules-checkbox').checked;\">\
         I am in a quiet location and I will not vocalize during the test.\
     </p>\
+    <div style=\"text-align:center;\">\
+        <input id=\"p2-acceptance\" class=\"button\" type=\"button\" value=\"Continue\" onclick=\"nav_nextPage();\" disabled=\"true\" />\
+    </div>\
 </div>";
 
 var page_03 = "<div style=\"text-align:center\">\
@@ -39,9 +47,9 @@ var page_03 = "<div style=\"text-align:center\">\
         <input id=\"slider1\" class=\"slider\" type=\"range\" min=\"25\" max=\"8000\" value=\"440\" oninput=\"slider_changed(1);\" disabled=\"true\" />\
     </p>\
     <p>\
-        <input id=\"start1\" class=\"audio-button\" type=\"button\" value=\"Start\" onclick=\"slider_start(1);\" />\
+        <input id=\"start1\" class=\"button\" type=\"button\" value=\"Start\" onclick=\"slider_start(1);\" />\
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\
-        <input id=\"done1\" class=\"audio-button\" type=\"button\" value=\"Done\" onclick=\"slider_done(1);\" disabled=\"true\" />\
+        <input id=\"done1\" class=\"button\" type=\"button\" value=\"Done\" onclick=\"slider_done(1);\" disabled=\"true\" />\
     </p>\
 </div>";
 

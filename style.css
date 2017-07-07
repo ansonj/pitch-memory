@@ -11,12 +11,6 @@ td.td-nav {
     font-size: x-large;
 }
 
-.nav-link {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .page-title {
     font-size: large;
     font-weight: bold;
@@ -31,6 +25,6 @@ td.td-nav {
     width: 800px;
 }
 
-.audio-button {
+.button {
     font-size: 200%;
 }
