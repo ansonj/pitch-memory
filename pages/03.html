@@ -1,1 +1,20 @@
-First task page
+<div style="text-align:center">
+    <p><img src="img/cs.png" /></p>
+    <p>
+        Without using any external sounds or making any audible vocalization,
+        <br>first imagine what the note C sounds like.
+    </p>
+    <p>
+        When you've got it, click "Start" below to start the tone generator and activate the slider.
+        <br>Drag the slider to adjust the pitch until it matches the pitch you were imagining,
+        <br>then click "Done" to stop the generator.
+    </p>
+    <p>
+        <input id="slider1" class="slider" type="range" min="25" max="8000" value="440" oninput="slider_changed(1);" disabled="true" />
+    </p>
+    <p>
+        <input id="start1" class="audio-button" type="button" value="Start" onclick="slider_start(1);" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="done1" class="audio-button" type="button" value="Done" onclick="slider_done(1);" disabled="true" />
+    </p>
+</div>
