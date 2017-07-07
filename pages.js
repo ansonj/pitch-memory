@@ -4,7 +4,7 @@ var page_01 = "<div class=\"page-title\">\
 <br>\
 <div class=\"page-text\">\
     <p>\
-        By clicking Continue, you consent to participate.\
+        By clicking Continue, you consent to participate. The test will take about X minutes.\
     </p>\
     <div style=\"text-align:center;\">\
         <input class=\"button\" type=\"button\" value=\"Continue\" onclick=\"nav_nextPage();\"/>\
