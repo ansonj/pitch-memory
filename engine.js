@@ -50,5 +50,7 @@ function slider_changed(number) {
 function slider_done(number) {
     audio_stop();
     resp_hz1 = document.getElementById('slider'+number).value;
+    // temporary
+    alert("You picked " + resp_hz1 + "Hz");
     nav_nextPage();
 }
