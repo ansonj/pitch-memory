@@ -26,5 +26,9 @@ td.td-nav {
 }
 
 .button {
-    font-size: 200%;
+    font-size: x-large;
+}
+
+.demo-input {
+    font-size: large;
 }
