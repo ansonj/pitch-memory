@@ -43,6 +43,10 @@ function slider_done(number) {
     nav_nextPage();
 }
 
+function extractValue(field) {
+    return document.getElementById(field).value.trim();
+}
+
 function demo_validate() {
     var allFields = [
         "age",
@@ -53,9 +57,6 @@ function demo_validate() {
         "last-played"
     ];
     var badElements = [];
-    function extractValue(field) {
-        return document.getElementById(field).value.trim();
-    }
 
     for (var i = 0; i < allFields.length; i++) {
         var field = "demo-" + allFields[i];
