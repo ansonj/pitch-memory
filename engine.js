@@ -8,6 +8,7 @@ var resp_demo_instrument;
 var resp_demo_vocal_range;
 var resp_demo_how_often;
 var resp_demo_last_played;
+var resp_hz2;
 
 function nav_nextPage() {
     currentPage += 1;
@@ -28,9 +29,17 @@ function slider_changed(number) {
 
 function slider_done(number) {
     audio_stop();
-    resp_hz1 = document.getElementById('slider'+number).value;
+    var sliderValue = document.getElementById('slider'+number).value;
+    switch (number) {
+        case 1:
+            resp_hz1 = sliderValue;
+            break;
+        case 2:
+            resp_hz2 = sliderValue;
+            break;
+    }
     // temporary
-    alert("You picked " + resp_hz1 + "Hz");
+    alert("You picked " + sliderValue + "Hz");
     nav_nextPage();
 }
 

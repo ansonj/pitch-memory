@@ -99,7 +99,26 @@ var page_05 = "<div class=\"page-text\">\
     </div>\
 </div>";
 
-var page_06 = "Second task page";
+var page_06 = "<div style=\"text-align:center\">\
+    <p><img src=\"img/cs.png\" /></p>\
+    <p>\
+        Without using any external sounds or making any audible vocalization,\
+        <br>now imagine what the note C sounds like <span class=\"emphasized\">on your primary instrument</span>.\
+    </p>\
+    <p>\
+        When you've got it, click \"Start\" below to start the tone generator and activate the slider.\
+        <br>Drag the slider to adjust the pitch until it matches the pitch you were imagining,\
+        <br>then click \"Done\" to stop the generator.\
+    </p>\
+    <p>\
+        <input id=\"slider2\" class=\"slider\" type=\"range\" min=\"25\" max=\"8000\" value=\"440\" oninput=\"slider_changed(2);\" disabled=\"true\" />\
+    </p>\
+    <p>\
+        <input id=\"start2\" class=\"button\" type=\"button\" value=\"Start\" onclick=\"slider_start(2);\" />\
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\
+        <input id=\"done2\" class=\"button\" type=\"button\" value=\"Done\" onclick=\"slider_done(2);\" disabled=\"true\" />\
+    </p>\
+</div>";
 
 var page_07 = "Intermediate page";
 
