@@ -84,7 +84,20 @@ var page_04 = "<div class=\"page-text\">\
     </div>\
 </div>";
 
-var page_05 = "Prep page for second task";
+var page_05 = "<div class=\"page-text\">\
+    <p>\
+        Without making any external sounds or audible vocalization, take a moment to imagine that you are playing your primary instrument.\
+    </p>\
+    <p>\
+        Feel free to move into playing position. Imagine that you are running through a couple of scales, a warmup routine, or a short excerpt from a piece.\
+    </p>\
+    <p>\
+        When you've exercised your mental instrument, click to continue.\
+    </p>\
+    <div style=\"text-align:center;\">\
+        <input class=\"button\" type=\"button\" value=\"Continue\" onclick=\"nav_nextPage();\" />\
+    </div>\
+</div>";
 
 var page_06 = "Second task page";
 
