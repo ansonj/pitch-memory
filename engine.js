@@ -9,6 +9,7 @@ var resp_demo_vocal_range;
 var resp_demo_how_often;
 var resp_demo_last_played;
 var resp_hz2;
+var resp_demo_other_instruments;
 
 function nav_nextPage() {
     currentPage += 1;
@@ -83,4 +84,13 @@ function demo_validate() {
         changeColor(badElements, "red");
         setTimeout(function(){changeColor(badElements, "white")}, 1000);
     }
+}
+
+function validateOtherInstruments() {
+    var button = document.getElementById('other-instruments-continue');
+    button.disabled = extractValue('demo-other-instruments') == "";
+}
+
+function saveOtherInstruments() {
+    resp_demo_other_instruments = extractValue('demo-other-instruments');
 }
