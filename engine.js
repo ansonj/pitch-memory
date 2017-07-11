@@ -85,7 +85,7 @@ function demo_validate() {
             }
         }
         changeColor(badElements, "red");
-        setTimeout(function(){changeColor(badElements, "white")}, 1000);
+        setTimeout(function(){changeColor(badElements, "white");}, 1000);
     }
 }
 
