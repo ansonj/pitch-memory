@@ -36,3 +36,12 @@ td.td-nav {
 .emphasized {
     font-weight: bolder;
 }
+
+td.pitch-cell {
+    padding: 10;
+}
+
+.pitch-button {
+    font-size: xx-large;
+    width: 70;
+}

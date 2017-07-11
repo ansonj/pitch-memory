@@ -132,11 +132,57 @@ var page_07 = "<div class=\"page-text\">\
         When you're ready to being the listening test, click to continue. The buttons will appear, and the first tone will begin playing automatically.\
     </p>\
     <div style=\"text-align:center;\">\
-        <input id=\"other-instruments-continue\" class=\"button\" type=\"button\" value=\"Continue\" disabled=\"true\" onclick=\"saveOtherInstruments();nav_nextPage();\" />\
+        <input id=\"other-instruments-continue\" class=\"button\" type=\"button\" value=\"Continue\" disabled=\"true\" onclick=\"saveOtherInstruments();nav_nextPage();listening_start();\" />\
     </div>\
 </div>";
 
-var page_08 = "Final task page";
+var page_08 = "<div style=\"text-align:center;\">\
+    <p>\
+        Tone <span id=\"tone-count\">1</span> of 8\
+    </p>\
+    <table border=\"0\" style=\"margin:auto;\">\
+        <tr>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"C\" disabled=\"true\" onclick=\"listening_record_response('C');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"C# / Db\" disabled=\"true\" onclick=\"listening_record_response('C#');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"D\" disabled=\"true\" onclick=\"listening_record_response('D');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"D# / Eb\" disabled=\"true\" onclick=\"listening_record_response('D#');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"E\" disabled=\"true\" onclick=\"listening_record_response('E');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"F\" disabled=\"true\" onclick=\"listening_record_response('F');\" />\
+            </td>\
+        </tr>\
+        <tr>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"F# / Gb\" disabled=\"true\" onclick=\"listening_record_response('F#');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"G\" disabled=\"true\" onclick=\"listening_record_response('G');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"G# / Ab\" disabled=\"true\" onclick=\"listening_record_response('G#');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"A\" disabled=\"true\" onclick=\"listening_record_response('A');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"A# / Bb\" disabled=\"true\" onclick=\"listening_record_response('A#');\" />\
+            </td>\
+            <td class=\"pitch-cell\">\
+                <input class=\"pitch-button\" type=\"button\" value=\"B\" disabled=\"true\" onclick=\"listening_record_response('B');\" />\
+            </td>\
+        </tr>\
+    </table>\
+</div>";
 
 var page_09 = "Submit results page";
 
