@@ -42,8 +42,6 @@ function slider_done(number) {
             resp_hz2 = sliderValue;
             break;
     }
-    // temporary
-    alert("You picked " + sliderValue + "Hz");
     nav_nextPage();
 }
 
