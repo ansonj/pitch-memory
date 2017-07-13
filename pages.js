@@ -45,7 +45,7 @@ var page_03 = "<div style=\"text-align:center\">\
         <br>then click \"Done\" to stop the generator.\
     </p>\
     <p>\
-        <input id=\"slider1\" class=\"slider\" type=\"range\" min=\"25\" max=\"8000\" value=\"440\" oninput=\"slider_changed(1);\" disabled=\"true\" />\
+        <input id=\"slider1\" class=\"slider\" type=\"range\" min=\"0\" max=\"2770\" value=\"0\" oninput=\"slider_changed(1);\" disabled=\"true\" />\
     </p>\
     <p>\
         <input id=\"start1\" class=\"button\" type=\"button\" value=\"Start\" onclick=\"slider_start(1);\" />\
@@ -112,7 +112,7 @@ var page_06 = "<div style=\"text-align:center\">\
         <br>then click \"Done\" to stop the generator.\
     </p>\
     <p>\
-        <input id=\"slider2\" class=\"slider\" type=\"range\" min=\"25\" max=\"8000\" value=\"440\" oninput=\"slider_changed(2);\" disabled=\"true\" />\
+        <input id=\"slider2\" class=\"slider\" type=\"range\" min=\"0\" max=\"2770\" value=\"0\" oninput=\"slider_changed(2);\" disabled=\"true\" />\
     </p>\
     <p>\
         <input id=\"start2\" class=\"button\" type=\"button\" value=\"Start\" onclick=\"slider_start(2);\" />\

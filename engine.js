@@ -24,25 +24,34 @@ function slider_start(number) {
     slider.disabled = false;
     document.getElementById('start'+number).disabled = true;
     document.getElementById('done'+number).disabled = false;
-    audio_start(slider.value);
+    var frequency = slider_frequencyFromValue(slider.value);
+    audio_start(frequency);
 }
 
 function slider_changed(number) {
-    audio_change(document.getElementById('slider'+number).value);
+    var sliderValue = document.getElementById('slider'+number).value;
+    var frequency = slider_frequencyFromValue(sliderValue);
+    audio_change(frequency);
 }
 
 function slider_done(number) {
     audio_stop();
     var sliderValue = document.getElementById('slider'+number).value;
+    var frequency = slider_frequencyFromValue(sliderValue);
     switch (number) {
         case 1:
-            resp_hz1 = sliderValue;
+            resp_hz1 = frequency;
             break;
         case 2:
-            resp_hz2 = sliderValue;
+            resp_hz2 = frequency;
             break;
     }
     nav_nextPage();
+}
+
+function slider_frequencyFromValue(value) {
+    // http://www.szynalski.com/tone-generator/frequency-generator.mini.js
+    return Math.round(20.0 * Math.pow(1.0025, value) - 19.0);
 }
 
 function extractValue(field) {
