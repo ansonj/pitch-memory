@@ -86,11 +86,6 @@ function demo_validate() {
     }
 }
 
-function validateOtherInstruments() {
-    var button = document.getElementById('other-instruments-continue');
-    button.disabled = extractValue('demo-other-instruments') == "";
-}
-
 function saveOtherInstruments() {
     resp_demo_other_instruments = extractValue('demo-other-instruments');
 }

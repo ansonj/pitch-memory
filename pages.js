@@ -124,7 +124,7 @@ var page_06 = "<div style=\"text-align:center\">\
 var page_07 = "<div class=\"page-text\">\
     <p>\
         Do you play any other instruments? If so, which?\
-        <br><input id=\"demo-other-instruments\" class=\"demo-input\" size=\"40\" oninput=\"validateOtherInstruments();\" />\
+        <br><input id=\"demo-other-instruments\" class=\"demo-input\" size=\"40\" />\
     </p>\
     <p>\
         The next and final part of the study is a brief listening test, consisting of eight isolated tones for you to identify. A tone will play for a moment, and then you will have five seconds to click the note name (such as C, C#/Db, D, etc.) that best fits the tone. Don't be afraid to make a best guess if you are unsure&mdash;it's better to guess than not to respond at all.\
@@ -133,7 +133,7 @@ var page_07 = "<div class=\"page-text\">\
         When you're ready to begin the listening test, click to continue. The buttons will appear, and the first tone will begin playing automatically.\
     </p>\
     <div style=\"text-align:center;\">\
-        <input id=\"other-instruments-continue\" class=\"button\" type=\"button\" value=\"Continue\" disabled=\"true\" onclick=\"saveOtherInstruments();nav_nextPage();listening_start();\" />\
+        <input id=\"other-instruments-continue\" class=\"button\" type=\"button\" value=\"Continue\" onclick=\"saveOtherInstruments();nav_nextPage();listening_start();\" />\
     </div>\
 </div>";
 
