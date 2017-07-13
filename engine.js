@@ -52,18 +52,17 @@ function extractValue(field) {
 }
 
 function demo_validate() {
-    var allFields = [
+    var allFieldsToValidate = [
         "age",
         "gender",
         "instrument",
-        "vocal-range",
         "how-often",
         "last-played"
     ];
     var badElements = [];
 
-    for (var i = 0; i < allFields.length; i++) {
-        var field = "demo-" + allFields[i];
+    for (var i = 0; i < allFieldsToValidate.length; i++) {
+        var field = "demo-" + allFieldsToValidate[i];
         var value = extractValue(field);
         if (value == "") {
             badElements.push(document.getElementById(field));
