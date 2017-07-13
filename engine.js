@@ -268,6 +268,32 @@ var listening_functions = [
             listening_record_no_response();
         }
         nav_nextPage();
+
+        var resultsTextArea = document.getElementById('results-textarea');
+        var resultsText = [];
+        function escapedString(input, shouldEscape) {
+            var result = String(input);
+            if (shouldEscape) {
+                result = result.replace(/,/g, '\\,');
+            }
+            return result;
+        }
+        resultsText.push(escapedString(resp_hz1, false));
+        resultsText.push(escapedString(resp_demo_age, true));
+        resultsText.push(escapedString(resp_demo_gender, true));
+        resultsText.push(escapedString(resp_demo_instrument, true));
+        resultsText.push(escapedString(resp_demo_vocal_range, true));
+        resultsText.push(escapedString(resp_demo_how_often, true));
+        resultsText.push(escapedString(resp_demo_last_played, true));
+        resultsText.push(escapedString(resp_hz2, false));
+        resultsText.push(escapedString(resp_demo_other_instruments, true));
+        resultsText.push(escapedString(resp_listening_actual_pitch_names, false));
+        resultsText.push(escapedString(resp_listening_actual_pitch_freq, false));
+        resultsText.push(escapedString(resp_listening_response_pitch_names, false));
+
+        resultsTextArea.value = resultsText.join(',');
+        resultsTextArea.focus();
+        resultsTextArea.select();
     }
 ];
 

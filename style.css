@@ -45,3 +45,11 @@ td.pitch-cell {
     font-size: xx-large;
     width: 70;
 }
+
+#results-textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100;
+    width: 600;
+}

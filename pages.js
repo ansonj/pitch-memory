@@ -184,9 +184,18 @@ var page_08 = "<div style=\"text-align:center;\">\
     </table>\
 </div>";
 
-var page_09 = "Submit results page";
-
-var page_10 = "End page";
+var page_09 = "<div class=\"page-text\">\
+    <p>\
+        <textarea id=\"results-textarea\"></textarea>\
+    </p>\
+    <p>\
+        To submit your results, please copy all of the above text, paste it into the form below, and click Submit.\
+    </p>\
+    <p style=\"font-size:80%;\">\
+        (If you don't see the form, try using <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSf8ISBUykXE74Lxp5gnErDaGo80NZdNbTfYqniaf9KROO_Y0w/viewform?usp=sf_link\" target=\"_blank\">this direct link</a>.)\
+    </p>\
+    <iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSf8ISBUykXE74Lxp5gnErDaGo80NZdNbTfYqniaf9KROO_Y0w/viewform?embedded=true\" width=\"100%\" height=\"500\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\
+</div>";
 
 var pages = [
     page_01,
@@ -198,5 +207,4 @@ var pages = [
     page_07,
     page_08,
     page_09,
-    page_10,
 ];
