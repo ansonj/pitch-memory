@@ -33,7 +33,7 @@ var page_02 = "<div class=\"page-title\">\
 </div>";
 
 var page_03 = "<div style=\"text-align:center\">\
-    <p><img src=\"img/cs.png\" /></p>\
+    <p><img src=\"img/cs.png\" class=\"cs-image\" /></p>\
     <p>\
         Without using any external sounds or making any audible vocalization,\
         <br>first imagine what the note C sounds like.\
@@ -100,7 +100,7 @@ var page_05 = "<div class=\"page-text\">\
 </div>";
 
 var page_06 = "<div style=\"text-align:center\">\
-    <p><img src=\"img/cs.png\" /></p>\
+    <p><img src=\"img/cs.png\" class=\"cs-image\" /></p>\
     <p>\
         Without using any external sounds or making any audible vocalization,\
         <br>now imagine what the note C sounds like <span class=\"emphasized\">on your primary instrument</span>.\
