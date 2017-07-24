@@ -21,6 +21,12 @@ td.td-nav {
 
 }
 
+#consent-text {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cs-image {
     width: 475px;
 }
