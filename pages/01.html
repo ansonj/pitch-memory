@@ -1,31 +1,5 @@
-<div class="page-title">
-    <p>
-        Title of Project: Effect of Instrumental Study on Pitch Memory
-    </p>
-    <p>
-        Principal Investigator:  Christopher Bartlette, Ph.D., Binghamton University
-    </p>
-</div>
-<div id="consent-text" class="page-text" width="200px">
-    <p>
-        You are invited to participate in a research study involving the pitch memory. We hope to learn whether study and performance on an instrument facilitates pitch memory.
-    </p>
-    <p>
-        If you decide to participate, you will be asked to move a slider on an oscillator to match requsted pitch classes.  The one session will last approximately 10 minutes. There are no foreseeable risks, discomforts, or inconveniences associated with this study. We cannot and do not guarantee or promise that you will receive any benefits from this study.
-    </p>
-    <p>
-        Data will be collected through the use of an anonymous survey. There will be no identifying codes used, and the collected data will be anonymous. We will ask for your age, gender, and level of music experience; and we will conduct a brief test to assess absolute pitch. Your name will not be recorded, and the personal data will be reported only for the entire group (and not individually).
-    </p>
-    <p>
-        Your participation is voluntary, if you decide to participate; you are free to withdraw your consent and to discontinue participation at any time without prejudice.
-    </p>
-    <p>
-        If you have any additional questions, concerns, or complaints later or wish to report a research related problem, Dr. Bartlette, (<a href="mailto:cbartlette@binghamton.edu">cbartlette@binghamton.edu</a>) will be happy to answer them. If at any time you have questions concerning your rights as a research subject or you have questions, concerns, or complaints about the research you may call Binghamton University's Human Subject's Research Review Committee at (607) 777-3818.
-    </p>
-    <p>
-        YOU ARE MAKING A DECISION WHETHER OR NOT TO PARTICIPATE. CLICKING THE "CONTINUE" BUTTON INDICATES THAT YOU HAVE DECIDED TO PARTICIPATE HAVING READ THE INFORMATION PROVIDED ABOVE.
-    </p>
-    <div style="text-align:center;">
-        <input class="button" type="button" value="Continue" onclick="nav_nextPage();"/>
-    </div>
-</div>
+<input id="debug-down" class="button" type="button" value="<<" onclick="debug_step_down();" />
+<input id="debug-start" class="button" type="button" value="start/stop sound" onclick="debug_start();" />
+<input id="debug-up" class="button" type="button" value=">>" onclick="debug_step_up();" />
+<br>
+<span id="debug-current"></span>
