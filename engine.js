@@ -402,6 +402,15 @@ function frequency_for_pitch(pitch) {
     pitchTable["F3"] = 174.61;
     pitchTable["F#3"] = 185.00;
     pitchTable["G3"] = 196.00;
+    pitchTable["G#3"] = 207.65;
+    pitchTable["A3"] = 220.00;
+    pitchTable["A#3"] = 233.08;
+    pitchTable["B3"] = 246.94;
+    pitchTable["C4"] = 261.63;
+    pitchTable["C#4"] = 277.18;
+    pitchTable["D4"] = 293.66;
+    pitchTable["D#4"] = 311.13;
+    pitchTable["E4"] = 329.63;
     pitchTable["F4"] = 349.23;
     pitchTable["F#4"] = 369.99;
     pitchTable["G4"] = 392.00;
