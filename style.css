@@ -1,5 +1,10 @@
 body {
     font-family: sans-serif;
+    background-color: #005A43;
+}
+
+td {
+    background-color: white;
 }
 
 td.td-nav {
